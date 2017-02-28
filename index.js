@@ -9,19 +9,6 @@ vogels.AWS.config.update({
   region: "REGION",
   "endpoint": 'http://localhost:8000'
 });
-// var dynamoDriver = vogels.dynamoDriver(new AWS.DynamoDB({
-//   endpoint: 'http://localhost:8000',
-//   accessKeyId: 'dynamo',
-//   region: 'test',
-//   apiVersion: '2012-08-10',
-//   secretAccessKey: 'testDummyKey'
-// }));
-//
-// dynamoDriver.config.credentials = new AWS.Credentials({
-//   accessKeyId: "fakekey",
-//   secretAccessKey: "fakesecret",
-//   region: "fakeregion"
-// });
 
 var TestModel = vogels.define('TestModel', {
   hashKey : 'id',
